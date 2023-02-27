@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  background-color: rgb(47, 194, 91);
+}
+
+.search-bar-container {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 5px;
+  height: 50px;
+  width: 300px;
+  border-radius: 50px;
+  margin: 10px;
+  position: relative;
+  box-shadow: 3px 3px 3px rgb(36, 36, 36);
+}
+
+.magnifier {
+  cursor: pointer;
+  width: 35px;
+  position: absolute;
+  left: 20px;
+}
+
+.mic-icon {
+  width: 35px;
+  position: absolute;
+  right: 10px;
+}
+
+.input {
+  background-color: transparent;
+  border: none;
+  margin: 10px 50px;
+  outline: none;
+  color: brown;
+}
