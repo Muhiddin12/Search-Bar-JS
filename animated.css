@@ -12,32 +12,52 @@ body {
   display: flex;
   align-items: center;
   background-color: white;
-  padding: 5px;
+  padding: 5px 6px;
   height: 50px;
   width: 300px;
   border-radius: 50px;
   margin: 10px;
   position: relative;
-  box-shadow: 3px 3px 3px rgb(36, 36, 36);
+  transition: width 1.2s;
+  box-shadow: 3px 3px 3px rgb(75, 75, 75);
 }
 
 .magnifier {
   cursor: pointer;
   width: 35px;
   position: absolute;
-  left: 20px;
+  left: 15px;
 }
 
 .mic-icon {
   width: 35px;
   position: absolute;
+  cursor: pointer;
   right: 10px;
+  transition: width 0.4s;
+  transition-delay: 0.5s;
 }
 
 .input {
   background-color: transparent;
   border: none;
   margin: 10px 50px;
+  width: 100%;
+  font-size: 16px;
   outline: none;
   color: brown;
+  transition: width 1s;
+  transition-delay: 0.7s;
+}
+
+.active.search-bar-container {
+  width: 50px;
+}
+
+.active .input {
+  width: 0;
+}
+
+.active .mic-icon {
+  width: 0;
 }
